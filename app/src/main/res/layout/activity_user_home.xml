@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light">
+
+    <Button
+        android:id="@+id/orderMedicine_button_userHomeActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Order Medicines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showMedicineList_button_userHomeActivity"
+        android:layout_width="0dp"
+        android:background="@drawable/rounded_button"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Show Medicine List"
+        app:layout_constraintEnd_toEndOf="@+id/orderMedicine_button_userHomeActivity"
+        app:layout_constraintStart_toStartOf="@+id/orderMedicine_button_userHomeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/orderMedicine_button_userHomeActivity" />
+
+    <Button
+        android:id="@+id/searchMeds_button_userHomeActivity"
+        android:layout_width="0dp"
+        android:background="@drawable/rounded_button"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Search Medicine"
+        app:layout_constraintEnd_toEndOf="@+id/showMedicineList_button_userHomeActivity"
+        app:layout_constraintStart_toStartOf="@+id/showMedicineList_button_userHomeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/showMedicineList_button_userHomeActivity" />
+
+    <Button
+        android:id="@+id/callAmbulance_button_userHomeActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Call Ambulance"
+        app:layout_constraintEnd_toEndOf="@+id/searchMeds_button_userHomeActivity"
+        app:layout_constraintStart_toStartOf="@+id/searchMeds_button_userHomeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/searchMeds_button_userHomeActivity" />
+
+    <Button
+        android:id="@+id/editProfile_button_userHomeActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Edit Profile"
+        app:layout_constraintEnd_toEndOf="@+id/callAmbulance_button_userHomeActivity"
+        app:layout_constraintStart_toStartOf="@+id/callAmbulance_button_userHomeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/callAmbulance_button_userHomeActivity" />
+
+    <Button
+        android:id="@+id/showCart_button_userHomeActivity"
+        android:text="Show Cart"
+        android:layout_width="0dp"
+        android:background="@drawable/rounded_button"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editProfile_button_userHomeActivity"
+        app:layout_constraintStart_toStartOf="@+id/editProfile_button_userHomeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile_button_userHomeActivity"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

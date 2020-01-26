@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name_editText_addMedsActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/rounded_edit_text"
+        android:paddingLeft="25sp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/genericName_editText_addMedsActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:background="@drawable/rounded_edit_text"
+        android:paddingLeft="25sp"
+        android:hint="Generic Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/name_editText_addMedsActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_editText_addMedsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/name_editText_addMedsActivity" />
+
+    <EditText
+        android:id="@+id/price_editText_addMedsActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_edit_text"
+        android:paddingLeft="25sp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/genericName_editText_addMedsActivity"
+        app:layout_constraintStart_toStartOf="@+id/genericName_editText_addMedsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/genericName_editText_addMedsActivity" />
+
+    <EditText
+        android:id="@+id/quantity_editText_addMedsActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:paddingLeft="25sp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/price_editText_addMedsActivity"
+        app:layout_constraintStart_toStartOf="@+id/price_editText_addMedsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/price_editText_addMedsActivity" />
+
+    <Button
+        android:id="@+id/add_button_addMedsActivity"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:textAlignment="center"
+        android:layout_marginTop="88dp"
+        android:text="Add Medicine"
+        app:layout_constraintEnd_toEndOf="@+id/quantity_editText_addMedsActivity"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/quantity_editText_addMedsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_editText_addMedsActivity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
